@@ -19,12 +19,43 @@ NOIR = 'noir'
 
 #liste des villes
 class Ville:
-    ThunderBay = ('ThunderBay', 1)
-    Duluth = 'Duluth'
-    Manathan = 'Manathan'
-
-
-THUNDER_BAY = 1
-DULUTH = 2
-MARATHON = 3
-
+    ThunderBay = ('Thunder Bay', 1)
+    Duluth = ('Duluth', 2)
+    Marathon = ('Marathon',3)
+    Marquette = ('Marquette', 4)
+    Wausau = ('Wausau', 5)
+    EauClaire = ('EauClaire', 6)
+    Madison = ('Madison', 7)
+    CedarRapids = ('Cedar Rapids', 8)
+    Chicago = ('Chicago',9)
+    SouthBend = ('South Bend', 10)
+    GreenBay = ('Green Bay', 11)
+    Milwaukee = ('Milwaukee', 12)
+    SaultSteMarie = ('Sault Ste Marie', 13)
+    TraverseCity = ('Traverse City', 14)
+    Muskegon = ('Muskegon', 7)
+    arathon = ('Marathon', 3)
+    Marquette = ('Marquette', 4)
+    Wausau = ('Wausau', 5)
+    EauClaire = ('EauClaire', 6)
+    Madison = ('Madison', 7)
+    arathon = ('Marathon', 3)
+    Marquette = ('Marquette', 4)
+    Wausau = ('Wausau', 5)
+    EauClaire = ('EauClaire', 6)
+    Madison = ('Madison', 7)
+    arathon = ('Marathon', 3)
+    Marquette = ('Marquette', 4)
+    Wausau = ('Wausau', 5)
+    EauClaire = ('EauClaire', 6)
+    Madison = ('Madison', 7)
+    arathon = ('Marathon', 3)
+    Marquette = ('Marquette', 4)
+    Wausau = ('Wausau', 5)
+    EauClaire = ('EauClaire', 6)
+    Madison = ('Madison', 7)
+    arathon = ('Marathon', 3)
+    Marquette = ('Marquette', 4)
+    Wausau = ('Wausau', 5)
+    EauClaire = ('EauClaire', 6)
+    Madison = ('Madison', 7)
