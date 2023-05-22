@@ -8,7 +8,7 @@ class destination:
         return str(self.ville1) + "  <=>  " + str(self.ville2) +"  :  "+str(self.points)
 
 destinations_longues = [
-class(8,28,19)
+class(1,28,19)
 
 
 

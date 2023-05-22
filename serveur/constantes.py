@@ -14,4 +14,6 @@ DICO_EQUIVALANCE_LONGUEUR_POINTS = {1:1, 2:2, 3:4, 4:7, 5:10, 6:15, 7:18, 8:21, 
 END_COMUNICATION = 'fin des communication, a plus mon reuf'
 
 
-1 = ' Thunder Bay'
+THUNDER_BAY = 1
+DULUTH = 2
+MARATHON = 3
