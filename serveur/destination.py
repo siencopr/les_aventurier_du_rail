@@ -125,15 +125,5 @@ Destination(ville.ThunderBay,ville.GreenBay,12),
 Destination(ville.PortElgin,ville.Chicago,12),
 ]
 
-dico = {}
 for dest in longue_dest :
-
-    if dest.ville1[0] not in dico :
-        dico [dest.ville1[0] ] = 1
-    else :
-        dico[dest.ville1[0]] += 1
-    if dest.ville2[0] not in dico :
-        dico [dest.ville2[0] ] = 1
-    else :
-        dico[dest.ville2[0]] += 1
-print(dico)
+    print(dest)
