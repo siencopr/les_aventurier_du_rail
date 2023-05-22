@@ -7,3 +7,6 @@ baser sur le jeu, les avanturier du rail, se projet va contenir deux parties maj
  - la partie serveur : 
      - calcule de l'état du jeu
      - communication avec le(s) client(s)
+
+
+truc
