@@ -49,5 +49,33 @@ Destination(ville.Toronto,ville.SouthBend,21,ville.Wausau),
 Destination(ville.Toronto,ville.Montreal,20,ville.Timmins),
 Destination(ville.Milwaukee,ville.PortElgin,20,ville.ThunderBay),
 ]
+
+
+courte_dest = [
+Destination(ville.CedarRapids,ville.Duluth, 8),
+Destination(ville.Duluth,ville.SaultSteMarie,8),
+Destination(ville.SaultSteMarie,ville.Madison,10),
+Destination(ville.Madison,ville.Cleveland,9),
+Destination(ville.Cleveland,ville.SaultSteMarie,9),
+Destination(ville.SaultSteMarie,ville.Rouyn, 11),
+Destination(ville.Rouyn,ville.Toronto,10),
+Destination(ville.Toronto,ville.NewYork,8),
+Destination(ville.NewYork,ville.Montreal,9),
+Destination(ville.Montreal,ville.SouthBayMouth,9),
+Destination(ville.SouthBayMouth,ville.Milwaukee, 10),
+Destination(ville.Milwaukee,ville.Duluth,11),
+Destination(ville.Duluth,ville.Timmins,11),
+Destination(ville.Timmins,ville.Detroit,12),
+Destination(ville.Detroit,ville.NewYork,14),
+Destination(ville.NewYork,ville.PerrySound, 12),
+Destination(ville.PerrySound,ville.TraverseCity,10),
+Destination(ville.TraverseCity,ville.EauClaire,8),
+Destination(ville.EauClaire,ville.Timmins,12),
+Destination(ville.Timmins,ville.GreenBay,13),
+
+
+
+]
+
 for dest in longue_dest :
     print(dest)
