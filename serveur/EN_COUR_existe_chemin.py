@@ -4,4 +4,4 @@ for k in matrice_plateau:
 
 def existe_chemin(ville):
     while ville.
-fffffxxx
+fffffxxxddd
