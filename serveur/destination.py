@@ -1,3 +1,5 @@
+from constantes import *
+
 class destination:
     def __int__(self,ville1,ville2,points):
         self.ville1 = None
@@ -7,10 +9,11 @@ class destination:
     def __repr__(self):
         return str(self.ville1) + "  <=>  " + str(self.ville2) +"  :  "+str(self.points)
 
-destinations_longues = [
-class(1,28,19)
+destinationslongues = [
+destination(ville.Carda,28,19)
 
 
 
 
 ]
+print(destinations_longues)
