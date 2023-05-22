@@ -8,5 +8,10 @@ class Jeu:
 
         self.pioche = 'file'
         self.defausse = []
+
+        #je sais pas ou le mettre :
+        if self.pioche < 2 :
+             self.pioche = random.shuffle(self.defausse)
+
         self.j1 = None
         self.j2 = None

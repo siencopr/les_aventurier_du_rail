@@ -2,6 +2,9 @@ from joueur import *
 
 
 def poser(joueur,chemin):
+    """
+    verifie si le joueur à les cartes et les wagons necessaire pour pouvoir poser
+    """
     couleur = chemin.couleur
     taille = chemin.taille
 

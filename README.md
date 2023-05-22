@@ -10,7 +10,7 @@ baser sur le jeu, les avanturier du rail, se projet va contenir deux parties maj
         - classe ville associe une ville à un numéro ***ok***
         - classe carte destination ***ok***
         - pour le joueurs, créé une class (inventaire wagon dico , score , cartes destination list ) ***en cours***
-        - sur les chemins : calculer si le joueurs a les bonnes cartes + poser des wagons (chemin) ***ok***
+        - poser des wagons (chemin) ***ok***
         - calculer si deux destination sont relier (existe chemin)  ajoute score joueur
         - demander le nombre et le nom des joueurs (lois)
         - pioche (file) piocher et remplacer
