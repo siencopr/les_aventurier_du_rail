@@ -1,9 +1,21 @@
 from constantes import *
 from chemin import Chemin
 class Plateau:
-    def __int__(self):
+    def __init__(self):
         self.liste_chemin = [
-            Chemin(NOIR, 5, 1, TYPE_WAGON,(1,2))
+            Chemin(VERT,   5, 0,  TYPE_WAGON,  (30, 33, 0)),
+            Chemin(NOIR,   5, 1,  TYPE_WAGON,  (1,  2,  0)),
+            Chemin(JAUNE,  4, 2,  TYPE_BATEAU, (1,  2,  1)),
+            Chemin(VIOLET, 5, 3,  TYPE_BATEAU, (2,  36, 0)),
+            Chemin(NOIR,   5, 4,  TYPE_BATEAU, (2,  36, 1)),
+            Chemin(GRIS,   1, 5,  TYPE_BATEAU, (1,  36, 0)),
+            Chemin(GRIS,   1, 6,  TYPE_BATEAU, (1,  36, 1)),
+            Chemin(VIOLET, 3, 7,  TYPE_BATEAU, (1,  3)),
+            Chemin(JAUNE,  3, 8,  TYPE_BATEAU, (2,  6)),
+            Chemin(VERT,   4, 9,  TYPE_WAGON,  (2, 5)),
+            Chemin(GRIS,   2, 10, TYPE_WAGON,  (5, 6)),
+            Chemin(BLANC,  4, 11, TYPE_WAGON,  (6, 7))
+
         ]
 
     def ville_relier(self, id_joueur):
