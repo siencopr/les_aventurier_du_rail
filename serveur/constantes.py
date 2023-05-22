@@ -21,7 +21,7 @@ NOIR = 'noir'
 class ville:
     ThunderBay = ('Thunder Bay', 1)
     Duluth = ('Duluth', 2)
-    Marathon = ('Marathon',3)
+    Marathon = ('Marathon', 3)
     Marquette = ('Marquette', 4)
     Wausau = ('Wausau', 5)
     EauClaire = ('EauClaire', 6)
@@ -55,5 +55,5 @@ class ville:
     Scranton = ('Scranton', 34)
     NewYork = ('New York', 35)
     Point1 = ('Point1', 36)
-    Point2 = ('Point2', 37)
+    Point2 = ('Point2', 0)
 
