@@ -18,7 +18,7 @@ NOIR = 'noir'
 
 
 #liste des villes
-class Ville:
+class ville:
     Point2 = ('Point2', 0)
     ThunderBay = ('Thunder Bay', 1)
     Duluth = ('Duluth', 2)
