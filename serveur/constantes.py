@@ -46,7 +46,7 @@ class ville:
     Erie = ('Erie', 25)
     Buffalo = ('Buffalo', 26)
     PerrySound = ('Perry Sound', 27)
-    Rouyn-Noranda = ('Rouyn-Noranda', 28)
+    Rouyn = ('Rouyn-Noranda', 28)
     Ottawa = ('Ottawa', 29)
     Montreal = ('Montreal', 30)
     Kingston = ('Kingston', 31)

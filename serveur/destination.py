@@ -10,7 +10,7 @@ class destination:
         return str(self.ville1) + "  <=>  " + str(self.ville2) +"  :  "+str(self.points)
 
 destinationslongues = [
-destination(ville.Carda,28,19)
+destination(ville.CedarRapids,ville.Rouyn,19)
 
 
 
