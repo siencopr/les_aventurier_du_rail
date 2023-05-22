@@ -10,10 +10,7 @@ class Chemin:
         self.link_matrice_plateau = link_matrice
         self.type = type
         self.modifier_detenteur(0)
-    def __repr__(self):
-        return self.numero
-
-    def modifier_detenteur(self, new_valeur):
+    def modifier_detenteur(self, new_valeur): # plutot modifier valeur
         self.type = new_valeur
         if len(self.link_matrice_plateau) == 2:
             Matrice.matrice_plateau[self.link_matrice_plateau[0]][self.link_matrice_plateau[1]] = new_valeur
