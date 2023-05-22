@@ -72,10 +72,68 @@ Destination(ville.PerrySound,ville.TraverseCity,10),
 Destination(ville.TraverseCity,ville.EauClaire,8),
 Destination(ville.EauClaire,ville.Timmins,12),
 Destination(ville.Timmins,ville.GreenBay,13),
-
-
-
+Destination(ville.GreenBay,ville.Rouyn, 15),
+Destination(ville.Rouyn,ville.Kingston,9),
+Destination(ville.Kingston,ville.SouthBend,11),
+Destination(ville.SouthBend,ville.Wausau,8),
+Destination(ville.Wausau,ville.PortElgin,10),
+Destination(ville.PortElgin,ville.Rouyn, 11),
+Destination(ville.Rouyn,ville.ThunderBay,11),
+Destination(ville.ThunderBay,ville.GreenBay,11),
+Destination(ville.GreenBay,ville.Buffalo,15),
+Destination(ville.Buffalo,ville.Montreal,9),
+Destination(ville.Montreal,ville.PortElgin, 10),
+Destination(ville.PortElgin,ville.Marquette,10),
+Destination(ville.Marquette,ville.Madison,9),
+Destination(ville.Madison,ville.Duluth,8),
+Destination(ville.Duluth,ville.CedarRapids,10),
+Destination(ville.CedarRapids,ville.TraverseCity, 11),
+Destination(ville.TraverseCity,ville.Sudbury,10),
+Destination(ville.Sudbury,ville.Toledo,10),
+Destination(ville.Toledo,ville.SaultSteMarie,11),
+Destination(ville.SaultSteMarie,ville.Milwaukee,10),
+Destination(ville.Milwaukee,ville.Cleveland,8),
+Destination(ville.Cleveland,ville.CedarRapids,12),
+Destination(ville.CedarRapids,ville.Toronto,15),
+Destination(ville.Toronto,ville.SouthBayMouth, 5),
+Destination(ville.SouthBayMouth,ville.Montreal,13),
+Destination(ville.Montreal,ville.Detroit,13),
+Destination(ville.Detroit,ville.PerrySound,8),
+Destination(ville.PerrySound,ville.SouthBend,14),
+Destination(ville.SouthBend,ville.EauClaire, 10),
+Destination(ville.EauClaire,ville.Muskegon,10),
+Destination(ville.Muskegon,ville.SaultSteMarie,7),
+Destination(ville.Muskegon,ville.Toronto,9),
+Destination(ville.SouthBayMouth,ville.Buffalo,15),
+Destination(ville.SouthBayMouth,ville.Wausau, 5),
+Destination(ville.ThunderBay,ville.EauClaire,9),
+Destination(ville.Toledo,ville.Kingston,11),
+Destination(ville.Sudbury,ville.Wausau,14),
+Destination(ville.Marquette,ville.Buffalo,14),
+Destination(ville.Sudbury,ville.Syracuse,11),
+Destination(ville.Buffalo,ville.NewYork,14),
+Destination(ville.Syracuse,ville.Rouyn,13),
+Destination(ville.Syracuse,ville.BayCity,11),
+Destination(ville.Toledo,ville.Kingston,11),
+Destination(ville.BayCity,ville.Marquette,13),
+Destination(ville.Muskegon,ville.GreenBay,9),
+Destination(ville.Syracuse,ville.BayCity,13),
+Destination(ville.Chicago,ville.BayCity,10),
+Destination(ville.Chicago,ville.Marquette,13),
+Destination(ville.Chicago,ville.EauClaire,11),
+Destination(ville.ThunderBay,ville.GreenBay,12),
+Destination(ville.PortElgin,ville.Chicago,12),
 ]
 
+dico = {}
 for dest in longue_dest :
-    print(dest)
+
+    if dest.ville1[0] not in dico :
+        dico [dest.ville1[0] ] = 1
+    else :
+        dico[dest.ville1[0]] += 1
+    if dest.ville2[0] not in dico :
+        dico [dest.ville2[0] ] = 1
+    else :
+        dico[dest.ville2[0]] += 1
+print(dico)
