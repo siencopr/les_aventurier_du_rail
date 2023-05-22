@@ -6,3 +6,11 @@ class destination:
 
     def __repr__(self):
         return str(self.ville1) + "  <=>  " + str(self.ville2) +"  :  "+str(self.points)
+
+destinations_longues = [
+class(1,28,19)
+
+
+
+
+]

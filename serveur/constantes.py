@@ -12,7 +12,6 @@ CARTE_WAGON_LOCOMOTIVE = 'carte wagon locomotive'
 DICO_EQUIVALANCE_LONGUEUR_POINTS = {1:1, 2:2, 3:4, 4:7, 5:10, 6:15, 7:18, 8:21, 9:25}
 #comunicaiton
 END_COMUNICATION = 'fin des communication, a plus mon reuf'
-#couleur chemin
 JAUNE = 'jaune'
 ROUGE = 'rouge'
 NOIR = 'noir'
@@ -23,4 +22,9 @@ class Ville:
     ThunderBay = ('ThunderBay', 1)
     Duluth = 'Duluth'
     Manathan = 'Manathan'
+
+
+THUNDER_BAY = 1
+DULUTH = 2
+MARATHON = 3
 
