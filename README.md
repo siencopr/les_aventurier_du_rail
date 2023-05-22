@@ -6,7 +6,8 @@ baser sur le jeu, les avanturier du rail, se projet va contenir deux parties maj
      - comunication avec le serv
  - la partie serveur : 
      - calcule de l'état du jeu
-        - representation du plateau (matrice) 
+        - representation du plateau (matrice) (ok)
+        - classe ville associe une ville à un numéro
         - pour le joueurs, créé une class (inventaire wagon dico , score , cartes destination list ) ***en cours***
         - sur les chemins : calculer si le joueurs a les bonnes cartes + poser des wagons (chemin) - taille du chemin dans les wagons du jouer si pas assez renfovie erreur 
         - carte destination (ville , points)
