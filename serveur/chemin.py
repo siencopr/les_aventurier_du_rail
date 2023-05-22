@@ -7,3 +7,5 @@ class Chemin:
         self.type = type
         self.joueur_detenteur = None
         self.point = DICO_EQUIVALANCE_LONGUEUR_POINTS[self.taille]
+    def __repr__(self):
+        return self.numero
