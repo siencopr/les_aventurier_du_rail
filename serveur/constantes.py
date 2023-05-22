@@ -22,6 +22,9 @@ class Ville:
     ThunderBay = ('ThunderBay', 1)
     Duluth = 'Duluth'
     Manathan = 'Manathan'
+
+
 THUNDER_BAY = 1
 DULUTH = 2
 MARATHON = 3
+
