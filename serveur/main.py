@@ -1,0 +1,3 @@
+from constantes import *
+
+T
