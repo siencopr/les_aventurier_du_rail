@@ -1,6 +1,6 @@
 class Communication:
     def reception(self):
-        return input('reception')
+        return input()
 
-    def emition(self, consigne):
-        print(consigne)
+    def emition(self, cible, consigne):
+        print('pour : ', cible, 'consigne : ', consigne)
