@@ -8,6 +8,7 @@ class Joueur:
         self.nom = comu.reception()
         self.point = 0
         self.id = id
+        self.nb_wagon = 45
         self.carte_destination = self.choisir_cartes_destination(choix_carte_destination)
         self.carte_wagon = carte_wagon
 
