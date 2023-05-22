@@ -124,6 +124,3 @@ Destination(ville.Chicago,ville.EauClaire,11),
 Destination(ville.ThunderBay,ville.GreenBay,12),
 Destination(ville.PortElgin,ville.Chicago,12),
 ]
-
-for dest in longue_dest :
-    print(dest)
