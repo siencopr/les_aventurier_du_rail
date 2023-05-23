@@ -13,6 +13,8 @@ class Chemin:
     def modifier_detenteur(self, new_valeur): # plutot modifier valeur
         self.type = new_valeur
         if len(self.link_matrice_plateau) == 2:
-            Matrice.matrice_plateau[self.link_matrice_plateau[0]][self.link_matrice_plateau[1]] = new_valeur
+             Matrice.matrice_plateau[self.link_matrice_plateau[0]][self.link_matrice_plateau[1]] = new_valeur
+             Matrice.matrice_plateau[self.link_matrice_plateau[1]][self.link_matrice_plateau[0]] = new_valeur
         else:
             Matrice.matrice_plateau[self.link_matrice_plateau[0]][self.link_matrice_plateau[1]][self.link_matrice_plateau[2]] = new_valeur
+            Matrice.matrice_plateau[self.link_matrice_plateau[1]][self.link_matrice_plateau[0]][self.link_matrice_plateau[2]] = new_valeur
