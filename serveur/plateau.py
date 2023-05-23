@@ -14,7 +14,9 @@ class Plateau:
             Chemin(JAUNE,  3, 8,  TYPE_BATEAU, (2,  6)),
             Chemin(VERT,   4, 9,  TYPE_WAGON,  (2, 5)),
             Chemin(GRIS,   2, 10, TYPE_WAGON,  (5, 6)),
-            Chemin(BLANC,  4, 11, TYPE_WAGON,  (6, 7))
+            Chemin(BLANC,  4, 11, TYPE_WAGON,  (6, 7)),
+            Chemin(VIOLET, 5, 12, TYPE_WAGON,  (6, 8)),
+            Chemin(VERT,   3, 13, TYPE_WAGON,  (7, 8)),
 
         ]
 
