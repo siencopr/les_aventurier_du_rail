@@ -53,3 +53,15 @@ class Plateau:
                     self.ville_relier(id_joueur, i, origine)
 
         return self.relier[origine]
+
+
+    def reliee(self, villeA, villeB, id_joueur):
+        """
+        calcule si deux villes sont relier par le joueur id_joueur
+
+        :param villeA:
+        :param villeB:
+        :param id_joueur:
+        :return:
+        """
+        return villeA in self.ville_relier(id_joueur, villeB)
