@@ -15,20 +15,20 @@ def existe_chemin(villeA, villeB, joueur, matrice):
     numA = villeA[1]
     numB = villeB[1]
 
-    print(numA,numB)
-    ville_relié_A = []
-    for ligne in range (len(matrice) ):
-        if matrice[ligne][numA] == joueur  :
-            ville_relié_A += [ligne]
+    print(numA, numB)
+    ville_relie_A = []
+    for ligne in range(len(matrice)):
+        if matrice[ligne][numA] == joueur:
+            ville_relie_A += [ligne]
 
-    print(ville_relié_A)
-    ville_relié_B = []
+    print(ville_relie_A)
+    ville_relie_B = []
     for ligne in range (len(matrice) ):
         if matrice[ligne][numB] == joueur  :
-            ville_relié_B += [ligne]
-    print(ville_relié_B)
-    for k in ville_relié_A :
-        if k in ville_relié_B :
+            ville_relie_B += [ligne]
+    print(ville_relie_B)
+    for k in ville_relie_A :
+        if k in ville_relie_B :
             return True
     return False
 
