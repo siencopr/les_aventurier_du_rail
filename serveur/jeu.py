@@ -4,6 +4,7 @@ from joueur import Joueur
 import random
 
 Communication = Communication()
+Destination_calcule = Destination_calcule()
 class Jeu:
 
     def __init__(self):
@@ -27,7 +28,7 @@ class Jeu:
             self.nombre_joueurs = int(Communication.reception())
 
         if self.nombre_joueurs == 2:
-            self.j1 = Joueur(1, Destination_calcule.piocher_destination_depart(), [CARTE_WAGON_JAUNE, CARTE_WAGON_BLANC, CARTE_WAGON_NOIR, CARTE_WAGON_ROUGE])
+            self.j1 = Joueur(1, Destination_calcule.piocher_id_destination_depart(), [CARTE_WAGON_JAUNE, CARTE_WAGON_BLANC, CARTE_WAGON_NOIR, CARTE_WAGON_ROUGE])
     def boucle(self):
         pass
 

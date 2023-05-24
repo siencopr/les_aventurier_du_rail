@@ -20,7 +20,7 @@ class Joueur:
         list_garder = []
         reception = comu.reception()
         while reception != END_COMUNICATION or len(list_garder) == 0:
-            if reception in choix and not reception in list_garder:
+            if int(reception) in choix and not reception in list_garder:
                 list_garder.append(reception)
             else:
                 comu.emition(self.id, 'entré non valide')

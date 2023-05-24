@@ -299,5 +299,5 @@ class Destination_calcule:
         Destination(Ville.PortElgin____, Ville.Chicago______, 12, 105),
     ]
 
-    def piocher_destination_depart(self):
-        return [self.destinations_longue.pop(random.randint(0, len(self.destinations_longue)-1))] + [self.destinations_courte.pop(random.randint(0, len(self.destinations_courte)-1)) for k in range(3)]
+    def piocher_id_destination_depart(self):
+        return [self.destinations_longue.pop(random.randint(0, len(self.destinations_longue)-1)).id] + [self.destinations_courte.pop(random.randint(0, len(self.destinations_courte)-1)).id for k in range(3)]
