@@ -1,12 +1,13 @@
 from joueur import *
 
-matrice =  [
-[0,0,0,0],
-[0,0,0,0],
-[1,1,0,0],
-[1,0,0,0]]
+matrice = [
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [1, 1, 0, 0],
+    [1, 0, 0, 0]]
 
-def existe_chemin(villeA,villeB,joueur,matrice):
+
+def existe_chemin(villeA, villeB, joueur, matrice):
     """
     verifie s'il existe un chemin entre la villeA et la villeB appartenant au joueur JOUEUR
     """

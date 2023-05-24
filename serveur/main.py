@@ -3,5 +3,4 @@ from plateau import Plateau
 from joueur import Joueur
 
 plt = Plateau()
-
-print(Matrice.matrice_plateau)
+print(plt.ville_relier(0,2))
