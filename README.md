@@ -6,12 +6,13 @@ baser sur le jeu, les avanturier du rail, se projet va contenir deux parties maj
      - comunication avec le serv
  - la partie serveur : 
      - calcule de l'état du jeu
-        - representation du plateau (matrice) ***en cour***
-        - classe ville associe une ville à un numéro ***ok***
+        - representation du plateau (matrice) ***ok***
+        - associe une ville à un numéro ***ok***
         - classe carte destination ***ok***
         - pour le joueurs, créé une class (inventaire wagon dico , score , cartes destination list ) ***en cours***
         - poser des wagons (chemin) ***ok***
-        - calculer si deux destination sont relier (existe chemin)  ajoute score joueur
+        - calculer si deux destination sont relier (existe chemin)  ***ok***
+        - ajoute score joueur
         - demander le nombre et le nom des joueurs (lois)
         - pioche (file) piocher et remplacer
         - defausse (liste, si pioche vide : shufle defausse puis add sur la pioche)
