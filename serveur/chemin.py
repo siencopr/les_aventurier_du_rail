@@ -10,6 +10,14 @@ class Chemin:
         self.link_matrice_plateau = link_matrice
         self.type = type
         self.modifier_detenteur(0)
+
+    def poser(self, joueur):
+        """
+        verifie si le joueur à les cartes et les wagons necessaire pour pouvoir poser
+        """
+        if joueur.choisir_carte_poser(self.couleur, self.taille):
+            self.modifier_detenteur(joueur.id)
+
     def modifier_detenteur(self, new_valeur): # plutot modifier valeur
         self.type = new_valeur
         if len(self.link_matrice_plateau) == 2:

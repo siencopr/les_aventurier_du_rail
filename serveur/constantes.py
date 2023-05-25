@@ -3,17 +3,13 @@ import random
 TYPE_BATEAU = 'chemin bateau'
 TYPE_WAGON = 'chemin wagon'
 # carte wagon
-CARTE_WAGON_JAUNE = 'carte wagon jaune'
-CARTE_WAGON_ROUGE = 'carte wagon rouge'
-CARTE_WAGON_NOIR = 'carte wagon noir'
-CARTE_WAGON_VERT = 'carte wagon verre'
-CARTE_WAGON_BLANC = 'carte wagon blanc'
-CARTE_WAGON_VIOLET = 'carte wagon violet'
 CARTE_WAGON_LOCOMOTIVE = 'carte wagon locomotive'
 # dico equivalance longueur <=> point
 DICO_EQUIVALANCE_LONGUEUR_POINTS = {1: 1, 2: 2, 3: 4, 4: 7, 5: 10, 6: 15, 7: 18, 8: 21, 9: 25}
-# comunicaiton
+# comunication
+PIOCHE_CARTE_CACHER = 'je suis un mec malin qui pocher les cartes fasse cacher'
 END_COMUNICATION = 'fin des communication, a plus mon reuf'
+ANNULATION_CHOIX_CARTE = 'en fait, je suis casse couille, je veux annuler'
 # couleur chemins
 JAUNE = 'jaune'
 ROUGE = 'rouge'
@@ -22,6 +18,7 @@ VERT = 'vert'
 BLANC = 'blanc'
 VIOLET = 'violet'
 GRIS = 'gris'
+
 
 
 # liste des villes
@@ -301,3 +298,4 @@ class Destination_calcule:
 
     def piocher_id_destination_depart(self):
         return [self.destinations_longue.pop(random.randint(0, len(self.destinations_longue)-1)).id] + [self.destinations_courte.pop(random.randint(0, len(self.destinations_courte)-1)).id for k in range(3)]
+
