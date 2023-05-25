@@ -190,7 +190,7 @@ class Destination_calcule:
         Destination(Ville.CedarRapids__, Ville.Rouyn________, 20, 0),
         Destination(Ville.ThunderBay___, Ville.Buffalo______, 20, 1),
         Destination(Ville.Marathon_____, Ville.NewYork______, 22, 2),
-        Destination(Ville.EauClaire____, Ville.Detroit______, 20, 3),
+
         Destination(Ville.Montreal_____, Ville.TraverseCity_, 19, 4),
         Destination(Ville.Wausau_______, Ville.Rouyn________, 20, 5),
         Destination(Ville.Scranton_____, Ville.Wausau_______, 20, 6),
@@ -207,7 +207,7 @@ class Destination_calcule:
         Destination(Ville.Syracuse_____, Ville.Marquette____, 19, 17),
         Destination(Ville.CedarRapids__, Ville.Sudbury______, 19, 18),
         Destination(Ville.BayCity______, Ville.Timmins______, 19, 19),
-        Destination(Ville.Scranton_____, Ville.Rouyn________, 21, 20, Ville.SaultSteMarie),
+        Destination(Ville.Scranton_____, Ville.Rouyn________, 20, 20, Ville.SaultSteMarie),
         Destination(Ville.Marquette____, Ville.Timmins______, 21, 21, Ville.Ottawa_______),
         Destination(Ville.Muskegon_____, Ville.Marquette____, 22, 22, Ville.Timmins______),
         Destination(Ville.PortElgin____, Ville.Duluth_______, 23, 23, Ville.Madison______),
@@ -224,6 +224,7 @@ class Destination_calcule:
         Destination(Ville.Milwaukee____, Ville.PortElgin____, 20, 34, Ville.ThunderBay___)
             ]
         self.destinations_courte = [
+        Destination(Ville.EauClaire____, Ville.Detroit______, 15, 3),
         Destination(Ville.CedarRapids__, Ville.Duluth_______, 8, 35),
         Destination(Ville.Duluth_______, Ville.SaultSteMarie, 8, 36),
         Destination(Ville.SaultSteMarie, Ville.Madison______, 10, 37),
@@ -277,7 +278,7 @@ class Destination_calcule:
         Destination(Ville.Muskegon_____, Ville.SaultSteMarie, 7, 85),
         Destination(Ville.Muskegon_____, Ville.Toronto______, 9, 86),
         Destination(Ville.SouthBayMouth, Ville.Buffalo______, 15, 87),
-        Destination(Ville.SouthBayMouth, Ville.Wausau_______, 5, 88),
+        Destination(Ville.SouthBayMouth, Ville.Wausau_______, 8, 88),
         Destination(Ville.ThunderBay___, Ville.EauClaire____, 9, 89),
         Destination(Ville.Toledo_______, Ville.Kingston_____, 11, 90),
         Destination(Ville.Sudbury______, Ville.Wausau_______, 14, 91),
@@ -288,7 +289,7 @@ class Destination_calcule:
         Destination(Ville.Syracuse_____, Ville.BayCity______, 11, 96),
         Destination(Ville.Toledo_______, Ville.Kingston_____, 11, 97),
         Destination(Ville.BayCity______, Ville.Marquette____, 13, 98),
-        Destination(Ville.Muskegon_____, Ville.GreenBay_____, 9, 99),
+        Destination(Ville.Muskegon_____, Ville.GreenBay_____, 8, 99),
         Destination(Ville.Syracuse_____, Ville.BayCity______, 13, 100),
         Destination(Ville.Chicago______, Ville.BayCity______, 10, 101),
         Destination(Ville.Chicago______, Ville.Marquette____, 13, 102),
