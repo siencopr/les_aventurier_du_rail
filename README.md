@@ -1,7 +1,7 @@
 # les_aventurier_du_rail
 
 baser sur le jeu, les avanturier du rail, se projet va contenir deux parties majeur : 
- - la parie client :
+ - la partie client :
      - interface graphique
      - comunication avec le serv
  - la partie serveur : 
