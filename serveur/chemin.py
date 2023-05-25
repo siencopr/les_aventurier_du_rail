@@ -17,6 +17,7 @@ class Chemin:
         """
         if joueur.choisir_carte_poser(self.couleur, self.taille):
             self.modifier_detenteur(joueur.id)
+            joueur.point += self.point
 
     def modifier_detenteur(self, new_valeur): # plutot modifier valeur
         self.type = new_valeur

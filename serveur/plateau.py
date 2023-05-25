@@ -24,6 +24,52 @@ class Plateau:
             Chemin(GRIS, 3, 16, TYPE_WAGON, (7, 8)),
             Chemin(GRIS, 1, 17, TYPE_WAGON, (7, 12))
 
+            Chemin(VIOLET, 5, 18, TYPE_WAGON, (8, 9, 0)),
+            Chemin(NOIR, 5, 19, TYPE_WAGON, (8, 9, 1)),
+            Chemin(BLANC, 3, 20, TYPE_WAGON, (7, 8)),
+            Chemin(ROUGE, 1, 21, TYPE_WAGON, (7, 12))
+            Chemin(BLANC, 5, 22, TYPE_WAGON, (30, 33, 0)),
+            Chemin(VERT, 5, 23, TYPE_WAGON, (1, 2, 0)),
+            Chemin(ROUGE, 4, 24, TYPE_BATEAU, (1, 2, 1)),
+            Chemin(VIOLET, 5, 25, TYPE_BATEAU, (2, 36, 0)),
+            Chemin(NOIR, 5, 26, TYPE_BATEAU, (2, 36, 1)),
+            Chemin(GRIS, 1, 27, TYPE_BATEAU, (1, 36, 0)),
+            Chemin(GRIS, 1, 28, TYPE_BATEAU, (1, 36, 1)),
+            Chemin(VIOLET, 3, 29, TYPE_BATEAU, (1, 3)),
+            Chemin(JAUNE, 3, 30, TYPE_BATEAU, (2, 6)),
+            Chemin(VERT, 4, 31, TYPE_WAGON, (2, 5)),
+            Chemin(GRIS, 2, 32, TYPE_WAGON, (5, 6)),
+            Chemin(BLANC, 4, 33, TYPE_WAGON, (6, 7)),
+            Chemin(VIOLET, 5, 34, TYPE_WAGON, (6, 8)),
+            Chemin(VERT, 3, 35, TYPE_WAGON, (7, 8)),
+            Chemin(JAUNE, 5, 36, TYPE_WAGON, (8, 9, 0)),
+            Chemin(ROUGE, 5, 37, TYPE_WAGON, (8, 9, 1)),
+            Chemin(GRIS, 3, 38, TYPE_WAGON, (7, 8)),
+            Chemin(GRIS, 1, 39, TYPE_WAGON, (7, 12))
+            Chemin(VIOLET, 5, 40, TYPE_WAGON, (8, 9, 0)),
+            Chemin(NOIR, 5, 41, TYPE_WAGON, (8, 9, 1)),
+            Chemin(BLANC, 3, 42, TYPE_WAGON, (7, 8)),
+            Chemin(ROUGE, 1, 43, TYPE_WAGON, (7, 12))
+            Chemin(BLANC, 5, 44, TYPE_WAGON, (30, 33, 0)),
+            Chemin(VERT, 5, 45, TYPE_WAGON, (1, 2, 0)),
+            Chemin(ROUGE, 4, 46, TYPE_BATEAU, (1, 2, 1)),
+            Chemin(VIOLET, 5, 47, TYPE_BATEAU, (2, 36, 0)),
+            Chemin(NOIR, 5, 48, TYPE_BATEAU, (2, 36, 1)),
+            Chemin(GRIS, 1, 49, TYPE_BATEAU, (1, 36, 0)),
+            Chemin(GRIS, 1, 50, TYPE_BATEAU, (1, 36, 1)),
+            Chemin(VIOLET, 3, 51, TYPE_BATEAU, (1, 3)),
+            Chemin(JAUNE, 3, 52, TYPE_BATEAU, (2, 6)),
+            Chemin(VERT, 4, 53, TYPE_WAGON, (2, 5)),
+            Chemin(GRIS, 2, 54, TYPE_WAGON, (5, 6)),
+            Chemin(BLANC, 4, 55, TYPE_WAGON, (6, 7)),
+            Chemin(VIOLET, 5, 56, TYPE_WAGON, (6, 8)),
+
+            Chemin(VERT, 3, 35, TYPE_WAGON, (7, 8)),
+            Chemin(JAUNE, 5, 36, TYPE_WAGON, (8, 9, 0)),
+            Chemin(ROUGE, 5, 37, TYPE_WAGON, (8, 9, 1)),
+            Chemin(GRIS, 3, 38, TYPE_WAGON, (7, 8)),
+            Chemin(GRIS, 1, 39, TYPE_WAGON, (7, 12))
+
         ]
 
     def ville_relier(self, id_joueur, num_ville, origine = None):
