@@ -4,7 +4,7 @@ import random
 comu = Communication()
 class Pioche_Defausse:
     def __init__(self):
-        self.Pioche = 30 * [JAUNE, BLANC, NOIR, ROUGE, CARTE_WAGON_LOCOMOTIVE, VERT, VIOLET]
+        self.Pioche = 30 * [JAUNE_, BLANC_, NOIR__, ROUGE_, CARTE_WAGON_LOCOMOTIVE, VERT__, VIOLET]
         self.Pioche = random.shuffle(self.Pioche)
         self.Pioche_visible, self.Pioche = self.Pioche[:5], self.Pioche[6:]
         self.Defausse = []

@@ -1,7 +1,7 @@
 import random
 
 TYPE_BATEAU = 'chemin bateau'
-TYPE_WAGON = 'chemin wagon'
+TYPE_WAGON_ = 'chemin wagon'
 # carte wagon
 CARTE_WAGON_LOCOMOTIVE = 'carte wagon locomotive'
 # dico equivalance longueur <=> point
@@ -11,13 +11,13 @@ PIOCHE_CARTE_CACHER = 'je suis un mec malin qui pocher les cartes fasse cacher'
 END_COMUNICATION = 'fin des communication, a plus mon reuf'
 ANNULATION_CHOIX_CARTE = 'en fait, je suis casse couille, je veux annuler'
 # couleur chemins
-JAUNE = 'jaune'
-ROUGE = 'rouge'
-NOIR = 'noir'
-VERT = 'vert'
-BLANC = 'blanc'
+JAUNE_ = 'jaune'
+ROUGE_ = 'rouge'
+NOIR__ = 'noir'
+VERT__ = 'vert'
+BLANC_ = 'blanc'
 VIOLET = 'violet'
-GRIS = 'gris'
+GRIS__ = 'gris'
 
 
 
@@ -187,30 +187,30 @@ class Destination_calcule:
     def __init__(self):
         from destination import Destination
         self.destinations_longue = [
-        Destination(Ville.CedarRapids__, Ville.Rouyn________, 0, 20),
-        Destination(Ville.ThunderBay___, Ville.Buffalo______, 1, 20),
-        Destination(Ville.Marathon_____, Ville.NewYork______, 2, 22),
-        Destination(Ville.EauClaire____, Ville.Detroit______, 3, 20),
-        Destination(Ville.Montreal_____, Ville.TraverseCity_, 4, 19),
-        Destination(Ville.Wausau_______, Ville.Rouyn________, 5, 20),
-        Destination(Ville.Scranton_____, Ville.Wausau_______, 6, 20),
-        Destination(Ville.Marathon_____, Ville.NewYork______, 7, 20),
-        Destination(Ville.Albany_______, Ville.Duluth_______, 8, 20),
-        Destination(Ville.Montreal_____, Ville.EauClaire____, 9, 23),
-        Destination(Ville.SaultSteMarie, Ville.NewYork______, 10, 20),
-        Destination(Ville.Chicago______, Ville.Ottawa_______, 11, 19),
-        Destination(Ville.Marquette____, Ville.Scranton_____, 12, 19),
-        Destination(Ville.Toronto______, Ville.Duluth_______, 13, 20),
-        Destination(Ville.SouthBayMouth, Ville.Duluth_______, 14, 20),
-        Destination(Ville.Chicago______, Ville.Rouyn________, 15, 20),
-        Destination(Ville.Toledo_______, Ville.ThunderBay___, 16, 20),
-        Destination(Ville.Syracuse_____, Ville.Marquette____, 17, 19),
-        Destination(Ville.CedarRapids__, Ville.Sudbury______, 18, 19),
+        Destination(Ville.CedarRapids__, Ville.Rouyn________, 20, 0),
+        Destination(Ville.ThunderBay___, Ville.Buffalo______, 20, 1),
+        Destination(Ville.Marathon_____, Ville.NewYork______, 22, 2),
+        Destination(Ville.EauClaire____, Ville.Detroit______, 20, 3),
+        Destination(Ville.Montreal_____, Ville.TraverseCity_, 19, 4),
+        Destination(Ville.Wausau_______, Ville.Rouyn________, 20, 5),
+        Destination(Ville.Scranton_____, Ville.Wausau_______, 20, 6),
+        Destination(Ville.Marathon_____, Ville.NewYork______, 20, 7),
+        Destination(Ville.Albany_______, Ville.Duluth_______, 20, 8),
+        Destination(Ville.Montreal_____, Ville.EauClaire____, 23, 9),
+        Destination(Ville.SaultSteMarie, Ville.NewYork______, 20, 10),
+        Destination(Ville.Chicago______, Ville.Ottawa_______, 19, 11),
+        Destination(Ville.Marquette____, Ville.Scranton_____, 19, 12),
+        Destination(Ville.Toronto______, Ville.Duluth_______, 20, 13),
+        Destination(Ville.SouthBayMouth, Ville.Duluth_______, 20, 14),
+        Destination(Ville.Chicago______, Ville.Rouyn________, 20, 15),
+        Destination(Ville.Toledo_______, Ville.ThunderBay___, 20, 16),
+        Destination(Ville.Syracuse_____, Ville.Marquette____, 19, 17),
+        Destination(Ville.CedarRapids__, Ville.Sudbury______, 19, 18),
         Destination(Ville.BayCity______, Ville.Timmins______, 19, 19),
         Destination(Ville.Scranton_____, Ville.Rouyn________, 21, 20, Ville.SaultSteMarie),
         Destination(Ville.Marquette____, Ville.Timmins______, 21, 21, Ville.Ottawa_______),
-        Destination(Ville.Muskegon_____, Ville.Marquette____, 21, 22, Ville.Timmins______),
-        Destination(Ville.PortElgin____, Ville.Duluth_______, 21, 23, Ville.Madison______),
+        Destination(Ville.Muskegon_____, Ville.Marquette____, 22, 22, Ville.Timmins______),
+        Destination(Ville.PortElgin____, Ville.Duluth_______, 23, 23, Ville.Madison______),
         Destination(Ville.GreenBay_____, Ville.BayCity______, 19, 24, Ville.Rouyn________),
         Destination(Ville.Chicago______, Ville.Toledo_______, 20, 25, Ville.PerrySound___),
         Destination(Ville.Albany_______, Ville.SouthBend____, 21, 26, Ville.EauClaire____),
@@ -223,7 +223,8 @@ class Destination_calcule:
         Destination(Ville.Toronto______, Ville.Montreal_____, 20, 33, Ville.Timmins______),
         Destination(Ville.Milwaukee____, Ville.PortElgin____, 20, 34, Ville.ThunderBay___)
             ]
-        self.destinations_courte = [Destination(Ville.CedarRapids__, Ville.Duluth_______, 8, 35),
+        self.destinations_courte = [
+        Destination(Ville.CedarRapids__, Ville.Duluth_______, 8, 35),
         Destination(Ville.Duluth_______, Ville.SaultSteMarie, 8, 36),
         Destination(Ville.SaultSteMarie, Ville.Madison______, 10, 37),
         Destination(Ville.Madison______, Ville.Cleveland____, 9, 38),

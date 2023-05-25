@@ -13,11 +13,11 @@ class Joueur:
         self.carte_destination = self.choisir_cartes_destination(choix_carte_destination)
         self.carte_wagon = {CARTE_WAGON_LOCOMOTIVE: 0,
                             VIOLET: 0,
-                            JAUNE: 0,
-                            ROUGE: 0,
-                            NOIR: 0,
-                            BLANC: 0,
-                            VERT: 0}
+                            JAUNE_: 0,
+                            ROUGE_: 0,
+                            NOIR__: 0,
+                            BLANC_: 0,
+                            VERT__: 0}
         self.ajouter_carte_wagon(carte_wagon)
 
     def choisir_cartes_destination(self, choix):
