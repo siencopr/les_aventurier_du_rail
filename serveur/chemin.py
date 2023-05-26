@@ -15,7 +15,7 @@ class Chemin:
         """
         verifie si le joueur à les cartes et les wagons necessaire pour pouvoir poser
         """
-        if joueur.choisir_carte_poser(self.couleur, self.taille):
+        if joueur.choisir_carte_poser(self, self.taille):
             self.modifier_detenteur(joueur.id)
             joueur.point += self.point
 
