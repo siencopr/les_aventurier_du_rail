@@ -3,6 +3,10 @@
 baser sur le jeu, les avanturier du rail, se projet va contenir deux parties majeur : 
  - la partie client :
      - interface graphique
+     - Cartes destinations longues et courte ***ok***
+     - Cartes wagons ***ok***
+     - Plateau ***ok***
+     - Pions et wagons
      - comunication avec le serv
  - la partie serveur : 
      - calcule de l'état du jeu
@@ -12,7 +16,9 @@ baser sur le jeu, les avanturier du rail, se projet va contenir deux parties maj
         - pour le joueurs, créé une class (inventaire wagon dico , score , cartes destination list ) ***ok***
         - poser des wagons (chemin) ***ok***
         - calculer si deux destination sont relier (existe chemin)  ***ok***
-        - ajoute score joueur
+        - 
+        - ***TO SEE :*** ajoute score joueur ( pour les destinations accomplis dans la methode relié de la classe plateau il faut ajouter au joueur le nombre de point de la destination , pour appeller le joueur par son id il faut une dico { id_joueur : objet joueur }
+        - 
         - demander le nombre et le nom des joueurs (lois)***en cours***
         - pioche (file) piocher et remplacer***en cour***
         - defausse (liste, si pioche vide : shufle defausse puis add sur la pioche)***ok***
@@ -23,4 +29,6 @@ baser sur le jeu, les avanturier du rail, se projet va contenir deux parties maj
        <- bouton quitter> 
      - communication avec le(s) client(s)
 
- 
+STATISTIQUES :
+37 villes en tout 
+110 chemins
