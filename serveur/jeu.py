@@ -27,6 +27,7 @@ class Jeu:
     def boucle(self):
         pass
 
+
     def end_game(self):
         ###calcule des points pour les cartes destinations################################################
         for joueur in self.l_joueurs:
