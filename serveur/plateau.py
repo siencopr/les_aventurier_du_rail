@@ -22,11 +22,11 @@ class Plateau:
             Chemin(JAUNE_, 5, 14, TYPE_WAGON_, (8, 9, 0)),
             Chemin(ROUGE_, 5, 15, TYPE_WAGON_, (8, 9, 1)),
             Chemin(GRIS__, 3, 16, TYPE_WAGON_, (7, 9)),
-            Chemin(GRIS__, 1, 17, TYPE_WAGON_, (7, 12))
+            Chemin(GRIS__, 1, 17, TYPE_WAGON_, (7, 12)),
             Chemin(VIOLET, 4, 18, TYPE_WAGON_, (5, 7)),
             Chemin(NOIR__, 4, 19, TYPE_WAGON_, (5, 12)),
             Chemin(BLANC_, 4, 20, TYPE_WAGON_, (4, 5)),
-            Chemin(ROUGE_, 6, 21, TYPE_BATEAU, (2, 4))
+            Chemin(ROUGE_, 6, 21, TYPE_BATEAU, (2, 4)),
             Chemin(BLANC_, 2, 22, TYPE_BATEAU, (0, 3)),
             Chemin(VERT__, 5, 23, TYPE_BATEAU, (0,13,0)),
             Chemin(ROUGE_, 5, 24, TYPE_BATEAU, (0,13,1)),
@@ -48,7 +48,7 @@ class Plateau:
             Chemin(NOIR__, 3, 40, TYPE_BATEAU, (11, 12, 1)),
             Chemin(GRIS__, 2, 41, TYPE_BATEAU, (12, 15)),
             Chemin(BLANC_, 1, 42, TYPE_BATEAU, (12, 9,0)),
-            Chemin(VERT__, 1, 43, TYPE_BATEAU, (12, 9,1))
+            Chemin(VERT__, 1, 43, TYPE_BATEAU, (12, 9,1)),
             Chemin(VIOLET, 3, 44, TYPE_BATEAU, (15, 9)),
             Chemin(GRIS__, 1, 45, TYPE_WAGON_, (9, 10, 0)),
             Chemin(GRIS__, 1, 46, TYPE_WAGON_, (9,10, 1)),
@@ -66,9 +66,9 @@ class Plateau:
             Chemin(ROUGE_, 3, 58, TYPE_WAGON_, (14, 19)),
             Chemin(GRIS__, 3, 59, TYPE_BATEAU, (13, 14)),
             Chemin(GRIS__, 3, 60, TYPE_BATEAU, (13, 18)),
-            Chemin(JAUNE_, 4, 61, TYPE_BATEAU, (13, 36,0))
-            Chemin(BLANC_, 4, 62, TYPE_BATEAU, (13, 36,1))
-            Chemin(GRIS__, 2, 63, TYPE_WAGON_, (17, 18))
+            Chemin(JAUNE_, 4, 61, TYPE_BATEAU, (13, 36,0)),
+            Chemin(BLANC_, 4, 62, TYPE_BATEAU, (13, 36,1)),
+            Chemin(GRIS__, 2, 63, TYPE_WAGON_, (17, 18)),
             Chemin(GRIS__, 1, 64, TYPE_BATEAU, (36,18)),
             Chemin(GRIS__, 2, 65, TYPE_BATEAU, (18, 23)),
             Chemin(BLANC_, 2, 66, TYPE_BATEAU, (18,27)),
@@ -86,11 +86,11 @@ class Plateau:
             Chemin(VERT__, 4, 78, TYPE_BATEAU, (36,20,1)),
             Chemin(GRIS__, 1, 79, TYPE_BATEAU, (36,23)),
             Chemin(JAUNE_, 2, 80, TYPE_BATEAU, (23,27)),
-            Chemin(ROUGE_, 5, 81, TYPE_WAGON_, (20,24))
+            Chemin(ROUGE_, 5, 81, TYPE_WAGON_, (20,24)),
             Chemin(BLANC_, 2, 82, TYPE_WAGON_, (23, 24)),
             Chemin(NOIR__, 2, 83, TYPE_WAGON_, (27, 24)),
             Chemin(BLANC_, 4, 84, TYPE_BATEAU, (24, 31)),
-            Chemin(NOIR__, 4, 85, TYPE_BATEAU, (24, 31))
+            Chemin(NOIR__, 4, 85, TYPE_BATEAU, (24, 31)),
             Chemin(GRIS__, 1, 86, TYPE_BATEAU, (24, 26, 0)),
             Chemin(GRIS__, 1, 87, TYPE_BATEAU, (24, 26, 1)),
             Chemin(VIOLET, 6, 88, TYPE_BATEAU, (20, 26, 0)),
