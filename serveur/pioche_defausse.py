@@ -5,7 +5,7 @@ comu = Communication()
 class Pioche_Defausse:
     def __init__(self):
         self.Pioche = 30 * [JAUNE_, BLANC_, NOIR__, ROUGE_, CARTE_WAGON_LOCOMOTIVE, VERT__, VIOLET]
-        self.Pioche = random.shuffle(self.Pioche)
+        random.shuffle(self.Pioche)
         self.Pioche_visible, self.Pioche = self.Pioche[:5], self.Pioche[6:]
         self.Defausse = []
 
@@ -22,7 +22,7 @@ class Pioche_Defausse:
                 tirage_restant -= 1
                 carte_choisi.append(self.Pioche.pop(0))
                 "ne peut prend qu'une autre carte de la pioche"
-            elif choix in self.Pioche_visible :
+            elif choix in self.Pioche_visible:
                 tirage_restant -= 1
                 carte_choisi.append(choix)
             else:
