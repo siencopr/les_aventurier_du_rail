@@ -8,7 +8,7 @@ class Joueur:
         self.nom = comu.reception()
         self.point = 0
         self.id = id
-        self.nb_bateau_wagons = { TYPE_BATEAU : 30 , TYPE_WAGON_ : 30}
+        self.nb_bateau_wagons = {TYPE_BATEAU : 30, TYPE_WAGON_ : 30}
         self.carte_destination = self.choisir_cartes_destination(choix_carte_destination)
         self.carte_wagon = {CARTE_WAGON_LOCOMOTIVE: 0,
                             VIOLET: 0,
@@ -43,7 +43,7 @@ class Joueur:
         for wagon in liste_cartes_wagons:
             self.carte_wagon[wagon] += 1
 
-    def choisir_carte_poser(self, chemin , taille):
+    def choisir_carte_poser(self, chemin, taille):
         """
         permet au joueur de choisir les cartes qu'il veut utiliser pour créé le chemin
 

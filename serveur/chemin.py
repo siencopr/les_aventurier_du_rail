@@ -17,6 +17,7 @@ class Chemin:
         """
         if joueur.choisir_carte_poser(self, self.taille):
             self.modifier_detenteur(joueur.id)
+            joueur.nb_bateau_wagons[self.type] -= self.taille
             joueur.point += self.point
 
     def modifier_detenteur(self, new_valeur): # plutot modifier valeur
