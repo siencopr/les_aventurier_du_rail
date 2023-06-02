@@ -19,6 +19,11 @@ class Joueur:
                             VERT__: 0}
         self.ajouter_carte_wagon(carte_wagon)
 
+    def __repr__(self):
+        print(self.nom)
+        print(self.id)
+        print(self.carte_wagon)
+
     def choisir_cartes_destination(self, choix):
         comu.emition(self.id, str('vous devez en choisir au moins une carte destination parmis : ' + str(choix)))
         list_garder = []
@@ -46,8 +51,6 @@ class Joueur:
     def choisir_carte_poser(self, chemin, taille):
         """
         permet au joueur de choisir les cartes qu'il veut utiliser pour créé le chemin
-
-
         """
         couleur_wagon_demander = chemin.couleur
         carte_donner = []

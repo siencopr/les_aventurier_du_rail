@@ -15,9 +15,13 @@ class Pioche_Defausse:
         comu.emition(id_joueur, 'choisi ton action de piochage, il te reste' + str(tirage_restant) + 'tirages')
         while tirage_restant != 0:
             choix = comu.reception()
-            if choix == CARTE_WAGON_LOCOMOTIVE and tirage_restant == 2:
-                carte_choisi.append(CARTE_WAGON_LOCOMOTIVE)
-                tirage_restant -= 2
+            if choix == CARTE_WAGON_LOCOMOTIVE:
+                if tirage_restant != 2:
+                    comu.emition(id_joueur, "pas assez de points")
+                    if CARTE_WAGON_LOCOMOTIVE in self.Pioche_visible:
+                        carte_choisi.append(CARTE_WAGON_LOCOMOTIVE)
+                        self.Pioche
+                        tirage_restant -= 2
             elif choix == PIOCHE_CARTE_CACHER :
                 tirage_restant -= 1
                 carte_choisi.append(self.Pioche.pop(0))

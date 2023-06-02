@@ -4,7 +4,7 @@ from plateau import Plateau
 from joueur import Joueur
 from pioche_defausse import Pioche_Defausse
 
-Communication = Communication()
+Comu = Communication()
 Destination_calcule = Destination_calcule()
 Pioche = Pioche_Defausse()
 class Jeu:
@@ -18,8 +18,8 @@ class Jeu:
 
     def initialisation_partie(self):
         if self.nombre_joueurs is None:
-            Communication.emition('all', 'nombre de joueurs ?')
-            self.nombre_joueurs = int(Communication.reception())
+            Comu.emition('all', 'nombre de joueurs ?')
+            self.nombre_joueurs = int(Comu.reception())
             assert self.nombre_joueurs <= 4, 'tu veux pas respecter les règles??????'
 
         for i in range(self.nombre_joueurs):
@@ -29,7 +29,13 @@ class Jeu:
     def boucle(self):
         #determiner a qui c le tour
         joueur_en_cour_id = 0
-        Pioche.piocher(joueur_en_cour_id)
+        Comu.emition(joueur_en_cour_id, "que veux tu faire")
+        recep = Comu.reception()
+        if recep == "piocher":
+            Pioche.piocher(joueur_en_cour_id)
+        elif recep == "poser":
+            Plateau.veut_poser(joueur_en_cour_id)
+
 
 
     def end_game(self):

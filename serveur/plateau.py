@@ -128,8 +128,9 @@ class Plateau:
         Comu.emition(id_joueur, 'quel chemin veux tu poser ? ')
         reception = Comu.reception()
         while reception != END_COMUNICATION and not chemin_is_poser:
-            if int(reception):
-                pass
+            if int(reception) <= len(self.liste_chemin):
+                if self.liste_chemin[int(reception)].joueur_detenteur == None:
+                    self.liste_chemin[int(reception)].poser(id_joueur)
 
 
     def ville_relier(self, id_joueur, num_ville, origine = None):
