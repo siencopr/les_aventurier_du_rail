@@ -20,7 +20,6 @@ VIOLET = 'violet'
 GRIS__ = 'gris'
 
 
-
 # liste des villes
 class Ville:
     Point2_______ = ('Point2', 0)
