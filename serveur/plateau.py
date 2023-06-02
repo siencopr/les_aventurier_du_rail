@@ -114,7 +114,7 @@ class Plateau:
             Chemin(NOIR__, 2, 104, TYPE_WAGON_, (32, 34,0)),
             Chemin(BLANC_, 2, 105, TYPE_WAGON_, (32, 34,1)),
             Chemin(ROUGE_, 3, 106, TYPE_BATEAU, (35, 33,0)),
-            Chemin(NOIR__, 3, 107, TYPE_BATEAU,  (35, 33,1)),
+            Chemin(NOIR__, 3, 107, TYPE_BATEAU, (35, 33,1)),
             Chemin(BLANC_, 5, 108, TYPE_WAGON_, (30, 33, 0)),
             Chemin(GRIS__, 2, 109, TYPE_BATEAU, (26,25)),
         ]

@@ -146,10 +146,10 @@ class Matrice:
          None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None, None, None, None,
          None],#24
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None, [None, None], None,
          None],#25
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, [None, None], None, None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None,
+         None, None, [None, None], None, None, None, [None, None], None, None, None, None, None, None, None, [None, None], None, None, None,
          None],#26
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
@@ -167,16 +167,16 @@ class Matrice:
          None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None,
          None],#31
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None, [None, None], [None, None], None,
          None],#32
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None,
+         None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None, [None, None], None, None, [None, None],
          None],#33
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None, [None, None], None, None, [None, None],
          None],#34
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, [None, None], [None, None], None,
          None],#35
         [None, [None, None], [None, None], None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None,
          None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
