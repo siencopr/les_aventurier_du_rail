@@ -13,7 +13,7 @@ class Chemin:
 
     def poser(self, joueur):
         """
-        verifie si le joueur à les cartes et les wagons necessaire pour pouvoir poser
+        verifie si le joueur à les cartes et les wagons necessaire pour pouvoir poser et pose si oui
         """
         if joueur.choisir_carte_poser(self, self.taille):
             self.modifier_detenteur(joueur.id)

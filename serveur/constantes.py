@@ -70,13 +70,13 @@ class Matrice:
     id d'un joueur indique le joueur qui possède le chemin
     """
     matrice_plateau = [
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, [None, None], [None, None], None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None], #0
-        [None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [[None, None], None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          [None, None]],#1
-        [None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [[None, None], [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          [None, None]],#2
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
@@ -97,32 +97,32 @@ class Matrice:
         [None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#8
-        [None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None, None, None, None,
+        [None, None, None, None, None, None, None, None, [None, None], None, [None, None], None, [None, None], None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#9
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None, None, None,
+         None, None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#10
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, None, None, None, None, None, None, None, None, None, None, None, [None, None], [None, None], None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#11
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, None, None, None, None, None, None, None, None, [None, None], None, [None, None], None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#12
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [[None, None], None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None],#13
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         [None, None]],#13
+        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#14
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#15
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, [None, None],
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#16
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None,
+         None, None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None,
          None],#17
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
@@ -131,25 +131,25 @@ class Matrice:
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#19
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None],#20
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, [None, None], None, None, None, None, [None, None], None, None, None, None, None, None, None, None, None,
+         [None, None]],#20
+        [None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None, None,
+         None, None, [None, None], None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#21
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, [None, None], None, None, None, [None, None], None, None, None, None, None, None, None, None, None, None,
          None],#22
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#23
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None, None, None, None, None,
          None],#24
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#25
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, [None, None], None, None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None,
          None],#26
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
@@ -157,14 +157,14 @@ class Matrice:
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#28
-        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, [None, None],
+         None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None,
          None],#29
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None, None,
+         None, None, None, None, None, None, None, None, None, None, None, [None, None], None, [None, None], None, [None, None], None, None,
          None],#30
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+         None, None, None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None, None,
          None],#31
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
@@ -178,8 +178,8 @@ class Matrice:
         [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None],#35
-        [None, [None, None], [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
-         None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+        [None, [None, None], [None, None], None, None, None, None, None, None, None, None, None, None, [None, None], None, None, None, None,
+         None, None, [None, None], None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
          None]]#36
 
 class Destination_calcule:
@@ -213,7 +213,7 @@ class Destination_calcule:
             Destination(Ville.Scranton_____, Ville.Rouyn________, 20, 20, Ville.SaultSteMarie),
             Destination(Ville.Cleveland____, Ville.Kingston_____, 20, 28, Ville.CedarRapids__),
             Destination(Ville.Syracuse_____, Ville.CedarRapids__, 20, 30, Ville.Duluth_______),
-            Destination(Ville.Milwaukee____, Ville.PortElgin____, 20, 34, Ville.ThunderBay___)
+            Destination(Ville.Milwaukee____, Ville.PortElgin____, 20, 34, Ville.ThunderBay___),
             Destination(Ville.Toronto______, Ville.Montreal_____, 20, 33, Ville.Timmins______),
             Destination(Ville.Chicago______, Ville.Toledo_______, 20, 25, Ville.PerrySound___),
             Destination(Ville.TraverseCity_, Ville.CedarRapids__, 21, 29, Ville.ThunderBay___),

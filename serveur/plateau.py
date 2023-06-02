@@ -1,5 +1,7 @@
 from constantes import *
 from chemin import Chemin
+from comunication import *
+Comu = Communication()
 
 class Plateau:
     def __init__(self):
@@ -110,12 +112,25 @@ class Plateau:
             Chemin(VERT__, 2, 102, TYPE_BATEAU, (32, 33,0)),
             Chemin(VIOLET, 2, 103, TYPE_BATEAU, (32, 33,1)),
             Chemin(NOIR__, 2, 104, TYPE_WAGON_, (32, 34,0)),
-            Chemin(BLANC_, 2, 105, TYPE_WAGON_, (32, 34,0)),
+            Chemin(BLANC_, 2, 105, TYPE_WAGON_, (32, 34,1)),
             Chemin(ROUGE_, 3, 106, TYPE_BATEAU, (35, 33,0)),
             Chemin(NOIR__, 3, 107, TYPE_BATEAU,  (35, 33,1)),
             Chemin(BLANC_, 5, 108, TYPE_WAGON_, (30, 33, 0)),
             Chemin(GRIS__, 2, 109, TYPE_BATEAU, (26,25)),
         ]
+
+
+    def veut_poser(self, id_joueur):
+        """
+        demande au joueur quel chemins il veut posser et le pose
+        """
+        chemin_is_poser = False
+        Comu.emition(id_joueur, 'quel chemin veux tu poser ? ')
+        reception = Comu.reception()
+        while reception != END_COMUNICATION and not chemin_is_poser:
+            if int(reception):
+                pass
+
 
     def ville_relier(self, id_joueur, num_ville, origine = None):
         """

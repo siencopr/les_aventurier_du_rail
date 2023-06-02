@@ -2,30 +2,34 @@ from constantes import *
 from comunication import Communication
 from plateau import Plateau
 from joueur import Joueur
+from pioche_defausse import Pioche_Defausse
 
 Communication = Communication()
 Destination_calcule = Destination_calcule()
+Pioche = Pioche_Defausse()
 class Jeu:
 
     def __init__(self):
         self.nombre_joueurs = None
         self.plateau = Plateau()
 
-        self.l_joueurs = []
-        self.j1 = None
-        self.j2 = None
+        self.l_joueurs = 4*[None]
 
 
     def initialisation_partie(self):
         if self.nombre_joueurs is None:
             Communication.emition('all', 'nombre de joueurs ?')
             self.nombre_joueurs = int(Communication.reception())
+            assert self.nombre_joueurs <= 4, 'tu veux pas respecter les règles??????'
 
-        if self.nombre_joueurs == 2:
-            self.l_joueurs = [self.j1, self.j2]
-            self.j1 = Joueur(1, Destination_calcule.piocher_id_destination_depart(), [JAUNE_, BLANC_, NOIR__, ROUGE_])
+        for i in range(self.nombre_joueurs):
+            self.l_joueurs[i] = Joueur(i, Destination_calcule.piocher_id_destination_depart(), Pioche.distribuer())
+
+
     def boucle(self):
-        pass
+        #determiner a qui c le tour
+        joueur_en_cour_id = 0
+        Pioche.piocher(joueur_en_cour_id)
 
 
     def end_game(self):

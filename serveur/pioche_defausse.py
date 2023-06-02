@@ -35,5 +35,11 @@ class Pioche_Defausse:
             self.Defausse = random.shuffle(self.Defausse)
             self.Pioche += self.Defausse
 
+    def distribuer(self):
+        """
+        distribue les 4 carte wagons du debut de partie
+        """
+        return [self.Pioche.pop(0) for i in range(4)]
+
 
 
