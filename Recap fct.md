@@ -35,4 +35,7 @@
     - def veut_poser(self, joueur):
     - def ville_relier(self, id_joueur, num_ville, origine = None):
     - def reliee(self, villeA, villeB, id_joueur):
-      
+- class Destination_calcule:
+    - destinations_longue
+    - destinations_courte
+    - def piocher_id_destination_depart(self):
