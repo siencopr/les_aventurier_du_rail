@@ -13,16 +13,17 @@ class Chemin:
 
     def poser(self, joueur):
         """
-        verifie si le joueur à les cartes et les wagons necessaire pour pouvoir poser
+        verifie si le joueur à les cartes et les wagons necessaire pour pouvoir poser et pose si oui
         """
-        if joueur.choisir_carte_poser(self, self.taille):
+        if joueur.choisir_carte_poser(self.couleur, self.taille, self.type):
             self.modifier_detenteur(joueur.id)
+            joueur.nb_bateau_wagons[self.type] -= self.taille
             joueur.point += self.point
+            return True
 
     def modifier_detenteur(self, new_valeur): # plutot modifier valeur
 
-        self.type = new_valeur
-        " ????????????????????????????????????????????"
+        self.joueur_detenteur = new_valeur
 
         if len(self.link_matrice_plateau) == 2:
              Matrice.matrice_plateau[self.link_matrice_plateau[0]][self.link_matrice_plateau[1]] = new_valeur
