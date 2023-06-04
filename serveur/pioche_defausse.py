@@ -10,30 +10,32 @@ class Pioche_Defausse:
         self.Defausse = []
 
     def piocher(self, id_joueur):
-        print('visible : ', self.Pioche_visible)
         tirage_restant = 2
         carte_choisi = []
-        comu.emition(id_joueur, 'choisi ton action de piochage, il te reste' + str(tirage_restant) + 'tirages')
-        while tirage_restant != 0:
+        while tirage_restant > 0:
+            print('visible : ', self.Pioche_visible)
+            comu.emition(id_joueur, 'choisi ton action de piochage, il te reste ' + str(tirage_restant) + ' tirages')
             choix = comu.reception()
             if choix == CARTE_WAGON_LOCOMOTIVE:
                 if tirage_restant != 2:
                     comu.emition(id_joueur, "pas assez de points")
-                    if CARTE_WAGON_LOCOMOTIVE in self.Pioche_visible:
-                        carte_choisi.append(CARTE_WAGON_LOCOMOTIVE)
-                        self.Pioche.remove(CARTE_WAGON_LOCOMOTIVE)
-                        self.Pioche.append(self.Pioche.pop(0))
-                        tirage_restant -= 2
-                    else:
-                        comu.emition(id_joueur, "t'as voulu nous bz ?")
-            elif choix == PIOCHE_CARTE_CACHER :
+                elif CARTE_WAGON_LOCOMOTIVE in self.Pioche_visible:
+                    carte_choisi.append(CARTE_WAGON_LOCOMOTIVE)
+                    self.Pioche.remove(CARTE_WAGON_LOCOMOTIVE)
+                    self.Pioche.append(self.Pioche.pop(0))
+                    tirage_restant -= 2
+                else:
+                    comu.emition(id_joueur, "t'as voulu nous bz ?")
+
+            elif choix == PIOCHE_CARTE_CACHER:
                 tirage_restant -= 1
                 carte_choisi.append(self.Pioche.pop(0))
+
             elif choix in self.Pioche_visible:
                 tirage_restant -= 1
                 carte_choisi.append(choix)
-                self.Pioche.remove(choix)
-                self.Pioche.append(self.Pioche.pop(0))
+                self.Pioche_visible.remove(choix)
+                self.Pioche_visible.append(self.Pioche.pop(0))
             else:
                 comu.emition(id_joueur, 'tu casse les couilles a choisir comme de la merde')
         return carte_choisi
