@@ -42,6 +42,7 @@ class Joueur:
 
         return list_garder.copy()
 
+
     def ajouter_carte_wagon(self, liste_cartes_wagons):
         """
         a partir d'une liste de carte wagon, ajoute les carte correspondante au joueur

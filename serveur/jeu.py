@@ -35,7 +35,8 @@ class Jeu:
             self.l_joueurs[joueur_en_cour_id].ajouter_carte_wagon(Pioche.piocher(joueur_en_cour_id))
         elif recep == "poser":
             Plateau.veut_poser(self.l_joueurs[joueur_en_cour_id])
-
+        elif recep == 'carte destination':
+            self.l_joueurs[joueur_en_cour_id].carte_destination += self.l_joueurs[joueur_en_cour_id].choisir_cartes_destination(Destination_calcule.repiocher())
 
 
     def end_game(self):

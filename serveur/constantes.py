@@ -302,3 +302,5 @@ class Destination_calcule:
     def piocher_id_destination_depart(self):
         return [self.destinations_longue.pop(random.randint(0, len(self.destinations_longue)-1)).id] + [self.destinations_courte.pop(random.randint(0, len(self.destinations_courte)-1)).id for k in range(3)]
 
+    def repiocher(self):
+        return [self.destinations_courte.pop(random.randint(0, len(self.destinations_courte)-1)).id for k in range(3)]

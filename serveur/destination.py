@@ -10,5 +10,5 @@ class Destination:
         if self.ville3 is None:
             return str(self.ville1) + "  <=>  " + str(self.ville2) + "  :  " + str(self.points)
         else:
-            return str(self.ville1) + "  <=>  " + str(self.ville2) + "  <=>  " + str(self.ville3) + "  :  " + str(
-                self.points)
+            return str(self.ville1) + "  <=>  " + str(self.ville2) + "  <=>  " + str(self.ville3) + "  :  " + str(self.points)
+
