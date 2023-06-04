@@ -7,12 +7,11 @@ from pioche_defausse import Pioche_Defausse
 Comu = Communication()
 Destination_calcule = Destination_calcule()
 Pioche = Pioche_Defausse()
+Plateau = Plateau()
 class Jeu:
 
     def __init__(self):
         self.nombre_joueurs = None
-        self.plateau = Plateau()
-
         self.l_joueurs = 4*[None]
 
 
@@ -29,12 +28,13 @@ class Jeu:
     def boucle(self):
         #determiner a qui c le tour
         joueur_en_cour_id = 0
+        print(self.l_joueurs[joueur_en_cour_id])
         Comu.emition(joueur_en_cour_id, "que veux tu faire")
         recep = Comu.reception()
         if recep == "piocher":
-            Pioche.piocher(joueur_en_cour_id)
+            self.l_joueurs[joueur_en_cour_id].ajouter_carte_wagon(Pioche.piocher(joueur_en_cour_id))
         elif recep == "poser":
-            Plateau.veut_poser(joueur_en_cour_id)
+            Plateau.veut_poser(self.l_joueurs[joueur_en_cour_id])
 
 
 

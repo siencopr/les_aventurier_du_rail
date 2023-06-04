@@ -1,9 +1,12 @@
 from constantes import *
 from joueur import Joueur
 from jeu import Jeu
-
+from plateau import Plateau
 Jeu = Jeu()
 
+
+Plateau()
 Jeu.initialisation_partie()
-Jeu.boucle()
-print(Jeu.l_joueurs[0])
+while True:
+    Jeu.boucle()
+

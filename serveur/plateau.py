@@ -3,6 +3,7 @@ from chemin import Chemin
 from comunication import *
 Comu = Communication()
 
+
 class Plateau:
     def __init__(self):
         self.relier = {}
@@ -30,44 +31,48 @@ class Plateau:
             Chemin(BLANC_, 4, 20, TYPE_WAGON_, (4, 5)),
             Chemin(ROUGE_, 6, 21, TYPE_BATEAU, (2, 4)),
             Chemin(BLANC_, 2, 22, TYPE_BATEAU, (0, 3)),
-            Chemin(VERT__, 5, 23, TYPE_BATEAU, (0,13,0)),
-            Chemin(ROUGE_, 5, 24, TYPE_BATEAU, (0,13,1)),
+            Chemin(VERT__, 5, 23, TYPE_BATEAU, (0, 13, 0)),
+            Chemin(ROUGE_, 5, 24, TYPE_BATEAU, (0, 13, 1)),
             Chemin(GRIS__, 2, 25, TYPE_BATEAU, (0, 4)),
             Chemin(GRIS__, 4, 26, TYPE_BATEAU, (3, 13)),
             Chemin(JAUNE_, 5, 27, TYPE_WAGON_, (3, 16)),
-            Chemin(VERT__, 4, 28, TYPE_WAGON_, (16,28)),
-            Chemin(BLANC_, 4, 29, TYPE_WAGON_, (16,17,0)),
-            Chemin(ROUGE_, 4, 30, TYPE_WAGON_, (16,17,1)),
-            Chemin(GRIS__, 8, 31, TYPE_WAGON_, (28,30)),
-            Chemin(ROUGE_, 7, 32, TYPE_WAGON_, (28,29)),
+            Chemin(VERT__, 4, 28, TYPE_WAGON_, (16, 28)),
+            Chemin(BLANC_, 4, 29, TYPE_WAGON_, (16, 17, 0)),
+            Chemin(ROUGE_, 4, 30, TYPE_WAGON_, (16, 17, 1)),
+            Chemin(GRIS__, 8, 31, TYPE_WAGON_, (28, 30)),
+            Chemin(ROUGE_, 7, 32, TYPE_WAGON_, (28, 29)),
             Chemin(VIOLET, 4, 33, TYPE_WAGON_, (28, 17)),
-            Chemin(ROUGE_, 1, 34, TYPE_WAGON_, (5,11)),
+            Chemin(ROUGE_, 1, 34, TYPE_WAGON_, (5, 11)),
             Chemin(GRIS__, 3, 35, TYPE_BATEAU, (4, 13)),
             Chemin(GRIS__, 6, 36, TYPE_BATEAU, (11, 13, 0)),
             Chemin(GRIS__, 6, 37, TYPE_BATEAU, (11, 13, 1)),
             Chemin(VERT__, 3, 38, TYPE_BATEAU, (11, 14)),
-            Chemin(JAUNE_, 3, 39, TYPE_BATEAU, (11, 12,0)),
+            Chemin(JAUNE_, 3, 39, TYPE_BATEAU, (11, 12, 0)),
             Chemin(NOIR__, 3, 40, TYPE_BATEAU, (11, 12, 1)),
             Chemin(GRIS__, 2, 41, TYPE_BATEAU, (12, 15)),
-            Chemin(BLANC_, 1, 42, TYPE_BATEAU, (12, 9,0)),
-            Chemin(VERT__, 1, 43, TYPE_BATEAU, (12, 9,1)),
+            Chemin(BLANC_, 1, 42, TYPE_BATEAU, (12, 9, 0)),
+            Chemin(VERT__, 1, 43, TYPE_BATEAU, (12, 9, 1)),
             Chemin(VIOLET, 3, 44, TYPE_BATEAU, (15, 9)),
             Chemin(GRIS__, 1, 45, TYPE_WAGON_, (9, 10, 0)),
-            Chemin(GRIS__, 1, 46, TYPE_WAGON_, (9,10, 1)),
+            Chemin(GRIS__, 1, 46, TYPE_WAGON_, (9, 10, 1)),
             Chemin(JAUNE_, 3, 47, TYPE_WAGON_, (15, 10)),
             Chemin(NOIR__, 4, 48, TYPE_WAGON_, (20, 10)),
             Chemin(GRIS__, 3, 49, TYPE_WAGON_, (10, 21, 0)),
-            Chemin(VIOLET, 3, 50, TYPE_WAGON_, (10,21, 1)),
-            Chemin(GRIS__, 1, 51, TYPE_BATEAU, (20,21,0)),
-            Chemin(GRIS__, 1, 52, TYPE_BATEAU, (20, 21,1)),
+            Chemin(VIOLET, 3, 50, TYPE_WAGON_, (10, 21, 1)),
+            Chemin(GRIS__, 1, 51, TYPE_BATEAU, (20, 21, 0)),
+            Chemin(GRIS__, 1, 52, TYPE_BATEAU, (20, 21, 1)),
             Chemin(JAUNE_, 2, 53, TYPE_BATEAU, (20, 22)),
-            Chemin(ROUGE_, 2, 54, TYPE_BATEAU, (21,22,0)),
-            Chemin(BLANC_, 2, 55, TYPE_BATEAU, (21,22,1)),
-            Chemin(ROUGE_, 3, 56, TYPE_BATEAU, (14, 15,0)),
-            Chemin(BLANC_, 3, 57, TYPE_WAGON_, (14, 15,1)),
+            Chemin(ROUGE_, 2, 54, TYPE_BATEAU, (21, 22, 0)),
+            Chemin(BLANC_, 2, 55, TYPE_BATEAU, (21, 22, 1)),
+            Chemin(ROUGE_, 3, 56, TYPE_BATEAU, (14, 15, 0)),
+            Chemin(BLANC_, 3, 57, TYPE_WAGON_, (14, 15, 1)),
             Chemin(ROUGE_, 3, 58, TYPE_WAGON_, (14, 19)),
             Chemin(GRIS__, 3, 59, TYPE_BATEAU, (13, 14)),
             Chemin(GRIS__, 3, 60, TYPE_BATEAU, (13, 18)),
+            Chemin(JAUNE_, 4, 61, TYPE_BATEAU, (13, 36, 0)),
+            Chemin(BLANC_, 4, 62, TYPE_BATEAU, (13, 36, 1)),
+            Chemin(GRIS__, 2, 63, TYPE_WAGON_, (17, 18)),
+            Chemin(GRIS__, 1, 64, TYPE_BATEAU, (36, 18)),
             Chemin(JAUNE_, 4, 61, TYPE_BATEAU, (13, 36,0)),
             Chemin(BLANC_, 4, 62, TYPE_BATEAU, (13, 36,1)),
             Chemin(GRIS__, 2, 63, TYPE_WAGON_, (17, 18)),
@@ -100,37 +105,42 @@ class Plateau:
             Chemin(NOIR__, 1, 90, TYPE_BATEAU, (22, 25, 0)),
             Chemin(VERT__, 1, 91, TYPE_BATEAU, (22, 25, 1)),
             Chemin(GRIS__, 9, 92, TYPE_WAGON_, (22, 35)),
-            Chemin(VIOLET, 6, 93, TYPE_WAGON_, (25, 34,0)),
-            Chemin(JAUNE_, 6, 94, TYPE_WAGON_, (25,34,1)),
-            Chemin(ROUGE_, 1, 95, TYPE_WAGON_, (34, 35,0)),
-            Chemin(VERT__, 1, 96, TYPE_WAGON_, (34, 35,1)),
+            Chemin(VIOLET, 6, 93, TYPE_WAGON_, (25, 34, 0)),
+            Chemin(JAUNE_, 6, 94, TYPE_WAGON_, (25, 34, 1)),
+            Chemin(ROUGE_, 1, 95, TYPE_WAGON_, (34, 35, 0)),
+            Chemin(VERT__, 1, 96, TYPE_WAGON_, (34, 35, 1)),
             Chemin(GRIS__, 4, 97, TYPE_WAGON_, (26, 34)),
-            Chemin(JAUNE_, 3, 98, TYPE_BATEAU, (26, 32,0)),
-            Chemin(ROUGE_, 3, 99, TYPE_BATEAU, (26, 32,1)),
+            Chemin(JAUNE_, 3, 98, TYPE_BATEAU, (26, 32, 0)),
+            Chemin(ROUGE_, 3, 99, TYPE_BATEAU, (26, 32, 1)),
             Chemin(GRIS__, 4, 100, TYPE_BATEAU, (26, 31)),
-            Chemin(VIOLET, 2, 101, TYPE_WAGON_, (31,32)),
-            Chemin(VERT__, 2, 102, TYPE_BATEAU, (32, 33,0)),
-            Chemin(VIOLET, 2, 103, TYPE_BATEAU, (32, 33,1)),
-            Chemin(NOIR__, 2, 104, TYPE_WAGON_, (32, 34,0)),
-            Chemin(BLANC_, 2, 105, TYPE_WAGON_, (32, 34,1)),
-            Chemin(ROUGE_, 3, 106, TYPE_BATEAU, (35, 33,0)),
-            Chemin(NOIR__, 3, 107, TYPE_BATEAU, (35, 33,1)),
+            Chemin(VIOLET, 2, 101, TYPE_WAGON_, (31, 32)),
+            Chemin(VERT__, 2, 102, TYPE_BATEAU, (32, 33, 0)),
+            Chemin(VIOLET, 2, 103, TYPE_BATEAU, (32, 33, 1)),
+            Chemin(NOIR__, 2, 104, TYPE_WAGON_, (32, 34, 0)),
+            Chemin(BLANC_, 2, 105, TYPE_WAGON_, (32, 34, 0)),
+            Chemin(ROUGE_, 3, 106, TYPE_BATEAU, (35, 33, 0)),
+            Chemin(NOIR__, 3, 107, TYPE_BATEAU, (35, 33, 1)),
             Chemin(BLANC_, 5, 108, TYPE_WAGON_, (30, 33, 0)),
-            Chemin(GRIS__, 2, 109, TYPE_BATEAU, (26,25)),
+            Chemin(GRIS__, 2, 109, TYPE_BATEAU, (26, 25)),
         ]
 
 
-    def veut_poser(self, id_joueur):
+    def veut_poser(self, joueur):
         """
         demande au joueur quel chemins il veut posser et le pose
         """
         chemin_is_poser = False
-        Comu.emition(id_joueur, 'quel chemin veux tu poser ? ')
+        Comu.emition(joueur.id, 'quel chemin veux tu poser ? ')
         reception = Comu.reception()
         while reception != END_COMUNICATION and not chemin_is_poser:
             if int(reception) <= len(self.liste_chemin):
-                if self.liste_chemin[int(reception)].joueur_detenteur == None:
-                    self.liste_chemin[int(reception)].poser(id_joueur)
+                if self.liste_chemin[int(reception)].joueur_detenteur == 0:
+                    chemin_is_poser = self.liste_chemin[int(reception)].poser(joueur)
+                else:
+                    Comu.emition(joueur.id, 'le joueur'+ str(self.liste_chemin[int(reception)].joueur_detenteur) + 'possède le chemin')
+            if not chemin_is_poser:
+                Comu.emition(joueur.id, 'quel chemin veux tu poser ? ')
+                reception = Comu.reception()
 
 
     def ville_relier(self, id_joueur, num_ville, origine = None):
@@ -161,7 +171,7 @@ class Plateau:
 
         return self.relier[origine]
 
-    def reliee(self, villeA, villeB, id_joueur, villeC):
+    def reliee(self, villeA, villeB, id_joueur):
         """
         calcule si deux villes sont relier par le joueur id_joueur
 
@@ -170,8 +180,4 @@ class Plateau:
         :param id_joueur:
         :return:
         """
-        relier_a_B = self.ville_relier(id_joueur, villeB)
-
-        if villeC is None:
-            return villeA in relier_a_B
-        return  villeA in relier_a_B and villeC in relier_a_B
+        return villeA in self.ville_relier(id_joueur, villeB)

@@ -20,9 +20,13 @@ class Joueur:
         self.ajouter_carte_wagon(carte_wagon)
 
     def __repr__(self):
-        print(self.nom)
-        print(self.id)
-        print(self.carte_wagon)
+        print('nom :', self.nom)
+        print('id :', self.id)
+        print('cartes wagons : ', self.carte_wagon)
+        print('carte destinations', self.carte_destination)
+        print('point : ', self.point)
+        print(self.nb_bateau_wagons)
+        return '\n \n'
 
     def choisir_cartes_destination(self, choix):
         comu.emition(self.id, str('vous devez en choisir au moins une carte destination parmis : ' + str(choix)))
@@ -48,30 +52,33 @@ class Joueur:
         for wagon in liste_cartes_wagons:
             self.carte_wagon[wagon] += 1
 
-    def choisir_carte_poser(self, chemin, taille):
+    def choisir_carte_poser(self, couleur, taille, type):
         """
         permet au joueur de choisir les cartes qu'il veut utiliser pour créé le chemin
         """
-        couleur_wagon_demander = chemin.couleur
+        couleur_wagon_demander = couleur
         carte_donner = []
-        if self.carte_wagon[couleur_wagon_demander] + self.carte_wagon[CARTE_WAGON_LOCOMOTIVE] < taille or self.nb_bateau_wagons[chemin.type] < taille :
+        if couleur_wagon_demander == GRIS__:
+            couleur_wagon_demander = CARTE_WAGON_LOCOMOTIVE
+
+        elif self.carte_wagon[couleur_wagon_demander] + self.carte_wagon[CARTE_WAGON_LOCOMOTIVE] < taille or self.nb_bateau_wagons[type] < taille:
             return False
-        else:
-            while taille != 0:
-                comu.emition(self.id, 'choisi une cartes wagons pour créé ton chemin')
-                carte_wagon_pose = comu.reception()
-                if carte_wagon_pose == ANNULATION_CHOIX_CARTE:
-                    self.ajouter_carte_wagon(carte_donner)
-                    return False
 
-                elif carte_wagon_pose == couleur_wagon_demander or carte_wagon_pose == CARTE_WAGON_LOCOMOTIVE:
-                    self.carte_wagon[carte_wagon_pose] -= 1
-                    carte_donner.append(carte_wagon_pose)
-                    taille -= 1
+        while taille != 0:
+            comu.emition(self.id, 'choisi une cartes wagons pour créé ton chemin')
+            carte_wagon_pose = comu.reception()
+            if carte_wagon_pose == ANNULATION_CHOIX_CARTE:
+                self.ajouter_carte_wagon(carte_donner)
+                return False
 
-                else:
-                    comu.emition(self.id, 'choix non valide')
+            elif carte_wagon_pose == couleur_wagon_demander or carte_wagon_pose == CARTE_WAGON_LOCOMOTIVE:
+                self.carte_wagon[carte_wagon_pose] -= 1
+                carte_donner.append(carte_wagon_pose)
+                taille -= 1
+
+            else:
+                comu.emition(self.id, 'choix non valide')
 
 
-            return True
+        return True
 
