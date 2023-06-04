@@ -213,7 +213,7 @@ class Destination_calcule:
             Destination(Ville.Scranton_____, Ville.Rouyn________, 20, 20, Ville.SaultSteMarie),
             Destination(Ville.Cleveland____, Ville.Kingston_____, 20, 28, Ville.CedarRapids__),
             Destination(Ville.Syracuse_____, Ville.CedarRapids__, 20, 30, Ville.Duluth_______),
-            Destination(Ville.Milwaukee____, Ville.PortElgin____, 20, 34, Ville.ThunderBay___)
+            Destination(Ville.Milwaukee____, Ville.PortElgin____, 20, 34, Ville.ThunderBay___),
             Destination(Ville.Toronto______, Ville.Montreal_____, 20, 33, Ville.Timmins______),
             Destination(Ville.Chicago______, Ville.Toledo_______, 20, 25, Ville.PerrySound___),
             Destination(Ville.TraverseCity_, Ville.CedarRapids__, 21, 29, Ville.ThunderBay___),
