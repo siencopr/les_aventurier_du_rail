@@ -59,7 +59,11 @@ class Joueur:
         couleur_wagon_demander = couleur
         carte_donner = []
         if couleur_wagon_demander == GRIS__:
-            couleur_wagon_demander = CARTE_WAGON_LOCOMOTIVE
+            comu.emition(self.id, 'quel couleur veut tu choisir ?')
+            couleur_wagon_demander = comu.reception()
+            if self.carte_wagon[couleur_wagon_demander] >= taille:
+                self.carte_wagon[couleur_wagon_demander] -= taille
+                return True
 
         elif self.carte_wagon[couleur_wagon_demander] + self.carte_wagon[CARTE_WAGON_LOCOMOTIVE] < taille or self.nb_bateau_wagons[type] < taille:
             return False
