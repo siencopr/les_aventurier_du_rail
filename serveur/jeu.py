@@ -26,17 +26,21 @@ class Jeu:
 
 
     def boucle(self):
-        #determiner a qui c le tour
-        joueur_en_cour_id = 0
-        print(self.l_joueurs[joueur_en_cour_id])
-        Comu.emition(joueur_en_cour_id, "que veux tu faire")
-        recep = Comu.reception()
-        if recep == "piocher":
-            self.l_joueurs[joueur_en_cour_id].ajouter_carte_wagon(Pioche.piocher(joueur_en_cour_id))
-        elif recep == "poser":
-            Plateau.veut_poser(self.l_joueurs[joueur_en_cour_id])
-        elif recep == 'carte destination':
-            self.l_joueurs[joueur_en_cour_id].carte_destination += self.l_joueurs[joueur_en_cour_id].choisir_cartes_destination(Destination_calcule.repiocher())
+        for i in range(self.nombre_joueurs):
+            joueur_en_cour_id = i
+            print(self.l_joueurs[joueur_en_cour_id])
+            Comu.emition(joueur_en_cour_id, "que veux tu faire")
+            recep = Comu.reception()
+            if recep == "piocher":
+                self.l_joueurs[joueur_en_cour_id].ajouter_carte_wagon(Pioche.piocher(joueur_en_cour_id))
+
+            elif recep == "poser":
+                Plateau.veut_poser(self.l_joueurs[joueur_en_cour_id])
+
+            elif recep == 'carte destination':
+                self.l_joueurs[joueur_en_cour_id].carte_destination += self.l_joueurs[joueur_en_cour_id].choisir_cartes_destination(Destination_calcule.repiocher())
+
+            if self.l_joueurs[joueur_en_cour_id].verifier_fin_partie(Plateau):
 
 
     def end_game(self):

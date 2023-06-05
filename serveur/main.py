@@ -7,6 +7,6 @@ Jeu = Jeu()
 
 Plateau()
 Jeu.initialisation_partie()
-while True:
-    Jeu.boucle()
+while Jeu.boucle():
+    pass
 
